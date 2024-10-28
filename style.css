@@ -34,12 +34,22 @@ body{
 #reset{
     padding: 15px;
 }
+#newBtn{
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
 .tic {
     color: #fff;
+    margin-top: 20px;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
 }
 
 .msg {
     color: #fff;
+    margin-top: 5px;
 }
 .msg-container button{
     padding: 10px;
