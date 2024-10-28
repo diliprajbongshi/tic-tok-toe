@@ -20,25 +20,25 @@ const showWinner = (pos1Value) =>{
     msgContainer.classList.remove("hide")
 }
 const newGame = ()=>{
-    player0 = true;
+    turn0 = true;
     ensableBtn()
     msgContainer.classList.add("hide")
 }
 const resetGame = ()=>{
-    player0 = true;
+    turn0 = true;
     ensableBtn()
     msgContainer.classList.add("hide")
 }
 
 const disableBtn = ()=>{
     for(let box of boxes){
-        player0 = true;
+        turn0 = true;
         box.disabled = true;
     }
 }
 const ensableBtn = ()=>{
     for(let box of boxes){
-        player0 = true;
+        turn0 = true;
         box.disabled = false;
         box.innerText = ""
     }
@@ -47,10 +47,10 @@ const ensableBtn = ()=>{
 boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
         if(turn0){
-            box.innerText = "0"
+            box.innerText = "🐦"
             turn0 = false;
         }else{
-            box.innerText = "x"
+            box.innerText = "🐠"
             turn0 = true;
         }
         box.disabled = true;
